@@ -1,11 +1,12 @@
 ﻿var myMap = (function ($) {
     "use strict";
 
-    var myMap = {};
+    var myMap = {},
+        map;
 
     myMap.create = function () {
         // var map = L.map('map').setView([50.505, -5], 13);
-        var map = L.map('map');
+        map = L.map('map');
 
 
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
